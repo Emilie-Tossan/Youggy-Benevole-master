@@ -1,0 +1,114 @@
+Bouton de choix de sexe ProfilFill
+						<Button
+							title="Homme"
+							type="outline"
+							onPress={() =>
+								this.setState({
+									maleBackground: '#E06666',
+									maleText: 'white'
+								})}
+							containerStyle={{
+								paddingTop: hp('1%'),
+								width: '30%'
+							}}
+							buttonStyle={{
+								backgroundColor: this.state.maleBackground,
+								borderColor: '#E06666',
+								borderRadius: 100
+							}}
+							titleStyle={{
+								color: this.state.maleText
+							}}
+						/>
+						<View style={{ width: hp('1%') }} />
+						<Button
+							title="Femme"
+							type="outline"
+							onPress={() =>
+								this.setState({
+									maleBackground: '#E06666',
+									maleText: 'white'
+								})}
+							containerStyle={{
+								paddingTop: hp('1%'),
+								width: '30%'
+							}}
+							buttonStyle={{
+								backgroundColor: this.state.maleBackground,
+								borderColor: '#E06666',
+								borderRadius: 100
+							}}
+							titleStyle={{
+								color: this.state.maleText
+							}}
+						/>
+						<View style={{ width: hp('1%') }} />
+
+						<Button
+							title="Autres"
+							type="outline"
+							onPress={() =>
+								this.setState({
+									maleBackground: '#E06666',
+									maleText: 'white'
+								})}
+							containerStyle={{
+								paddingTop: hp('1%'),
+								width: '30%'
+							}}
+							buttonStyle={{
+								backgroundColor: this.state.maleBackground,
+								borderColor: '#E06666',
+								borderRadius: 100
+							}}
+							titleStyle={{
+								color: this.state.maleText
+							}}
+						/>
+                        
+
+Overflow menu sexe selection
+						<OverflowMenu
+							data={data}
+							visible={dropdownVisible}
+							selectedIndex={selectedDropdownIndex}
+							onSelect={index => {
+								console.log(index);
+								this.setState({
+									selectedDropdownIndex: index
+								});
+								this.setState({
+									dropdownValue: data[index].title
+								});
+								this.setState({
+									dropdownVisible: false
+								});
+							}}
+							onBackdropPress={() =>
+								this.setState({
+									dropdownVisible: false
+								})}
+						>
+							<TouchableOpacity
+								onPress={() => {
+									this.setState({
+										dropdownVisible: true
+									});
+								}}
+							>
+								<View style={styles.inputContainer}>
+									<Input
+										placeholder="Selectionnez votre sexe"
+										containerStyle={
+											styles.inputContainerStyle
+										}
+										inputStyle={{ marginLeft: 3, 	fontSize: hp('2%')}}
+										inputContainerStyle={{
+											borderBottomColor: '#E5E5E5'
+										}}
+										pointerEvents="none"
+										value={dropdownValue}
+									/>
+								</View>
+							</TouchableOpacity>
+						</OverflowMenu>

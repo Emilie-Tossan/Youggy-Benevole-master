@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "962281741302",
+    "firebase_url": "https://youggy-cbbae.firebaseio.com",
+    "project_id": "youggy-cbbae",
+    "storage_bucket": "youggy-cbbae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:962281741302:android:14af0166ad9d9b18bdc5d7",
+        "android_client_info": {
+          "package_name": "com.youggy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "962281741302-fkkd0u8tm3gs8g6k9v7og9qh53kj1icp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBq34xGVfash_lYBeZLEhQDQzYhigQ9ajM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "962281741302-fc5bm4m2eh882kuec297veus2gaeduf9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "962281741302-ro9ut3j8gon6emmn32lhd61oubpe79j8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.youggy"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
